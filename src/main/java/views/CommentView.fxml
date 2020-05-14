@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ViewCommentController">
+   <top>
+      <ToolBar BorderPane.alignment="CENTER">
+        <items>
+            <Button id="CommentMainPage" fx:id="commentMainPage" mnemonicParsing="false" onAction="#onClickMainPage" text="Main Page" />
+          <Button id="RemoveComment" fx:id="removeComment" mnemonicParsing="false" onAction="#onClickRemoveComment" text="Remove Comment" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <ListView id="CommentList" fx:id="commentListView" prefHeight="364.0" prefWidth="298.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

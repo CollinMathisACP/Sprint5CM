@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="293.0" prefWidth="261.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AddCommentController">
+   <bottom>
+      <ToolBar BorderPane.alignment="CENTER">
+        <items>
+            <Button id="submitComment" fx:id="submitComment" mnemonicParsing="false" onAction="#onClickSubmitComment" text="Submit" />
+          <Button id="cancelComment" fx:id="cancelComment" mnemonicParsing="false" onAction="#onClickCancelComment" text="Cancel" />
+        </items>
+      </ToolBar>
+   </bottom>
+   <center>
+      <TextArea id="commentText" fx:id="commentText" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
